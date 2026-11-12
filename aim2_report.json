@@ -1,0 +1,309 @@
+{
+  "WARNING": "Synthetic dataset - pipeline validation only, not experimental results",
+  "audit": {
+    "rows_raw": 96,
+    "duplicates_removed": 0,
+    "invalid_or_negative": 0,
+    "max_gap_min": 5.0,
+    "unexpected_gaps": 0,
+    "days": 1,
+    "synthetic": true
+  },
+  "split_mode": "contiguous time blocks within one day (exploratory)",
+  "eligible_rows": {
+    "train": 50,
+    "val": 12,
+    "test": 13
+  },
+  "category_support": {
+    "train": {
+      "Low": 31,
+      "Moderate": 0,
+      "High": 0,
+      "Very high": 19,
+      "Extreme": 0
+    },
+    "val": {
+      "Low": 8,
+      "Moderate": 0,
+      "High": 2,
+      "Very high": 2,
+      "Extreme": 0
+    },
+    "test": {
+      "Low": 13,
+      "Moderate": 0,
+      "High": 0,
+      "Very high": 0,
+      "Extreme": 0
+    }
+  },
+  "absent_categories_unvalidated": [
+    "Moderate",
+    "Extreme"
+  ],
+  "label_set_for_macro_f1": [
+    "Low",
+    "High",
+    "Very high"
+  ],
+  "chosen_hyperparameters": {
+    "B_intensity_RF": {
+      "n_estimators": 100,
+      "max_depth": 3,
+      "min_samples_leaf": 5
+    },
+    "C_+history_RF": {
+      "n_estimators": 100,
+      "max_depth": 3,
+      "min_samples_leaf": 2
+    },
+    "D_+variability_duration_RF": {
+      "n_estimators": 100,
+      "max_depth": 3,
+      "min_samples_leaf": 2
+    },
+    "E_+dose_time_RF": {
+      "n_estimators": 100,
+      "max_depth": 3,
+      "min_samples_leaf": 10
+    },
+    "E_full_logreg": {},
+    "E_full_xgb": {
+      "max_depth": 2,
+      "learning_rate": 0.03,
+      "n_estimators": 50,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8
+    }
+  },
+  "confusion_matrix_full_RF_test": {
+    "labels": [
+      "Low",
+      "High",
+      "Very high"
+    ],
+    "matrix": [
+      [
+        13,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "results": {
+    "A_persistence": {
+      "n": 13,
+      "accuracy": 1.0,
+      "balanced_accuracy": null,
+      "macro_f1": 0.333,
+      "macro_f1_present": 1.0,
+      "per_class": {
+        "Low": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 13
+        },
+        "High": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "Very high": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        }
+      },
+      "multi_category_errors": 0
+    },
+    "B_intensity_RF": {
+      "n": 13,
+      "accuracy": 1.0,
+      "balanced_accuracy": null,
+      "macro_f1": 0.333,
+      "macro_f1_present": 1.0,
+      "per_class": {
+        "Low": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 13
+        },
+        "High": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "Very high": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        }
+      },
+      "multi_category_errors": 0
+    },
+    "C_+history_RF": {
+      "n": 13,
+      "accuracy": 1.0,
+      "balanced_accuracy": null,
+      "macro_f1": 0.333,
+      "macro_f1_present": 1.0,
+      "per_class": {
+        "Low": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 13
+        },
+        "High": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "Very high": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        }
+      },
+      "multi_category_errors": 0
+    },
+    "D_+variability_duration_RF": {
+      "n": 13,
+      "accuracy": 1.0,
+      "balanced_accuracy": null,
+      "macro_f1": 0.333,
+      "macro_f1_present": 1.0,
+      "per_class": {
+        "Low": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 13
+        },
+        "High": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "Very high": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        }
+      },
+      "multi_category_errors": 0
+    },
+    "E_+dose_time_RF": {
+      "n": 13,
+      "accuracy": 1.0,
+      "balanced_accuracy": null,
+      "macro_f1": 0.333,
+      "macro_f1_present": 1.0,
+      "per_class": {
+        "Low": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 13
+        },
+        "High": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "Very high": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        }
+      },
+      "multi_category_errors": 0
+    },
+    "E_full_logreg": {
+      "n": 13,
+      "accuracy": 1.0,
+      "balanced_accuracy": null,
+      "macro_f1": 0.333,
+      "macro_f1_present": 1.0,
+      "per_class": {
+        "Low": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 13
+        },
+        "High": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "Very high": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        }
+      },
+      "multi_category_errors": 0
+    },
+    "E_full_xgb": {
+      "n": 13,
+      "accuracy": 0.0,
+      "balanced_accuracy": null,
+      "macro_f1": 0.0,
+      "macro_f1_present": 0.0,
+      "per_class": {
+        "Low": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 13
+        },
+        "High": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "Very high": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        }
+      },
+      "multi_category_errors": 13
+    }
+  },
+  "validation_checks": {
+    "target_after_cutoff": true,
+    "step_future_moderate_past_low": true,
+    "no_dose_across_gap": true,
+    "no_target_across_gap": true,
+    "replay_identical": true
+  }
+}

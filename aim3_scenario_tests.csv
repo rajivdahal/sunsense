@@ -1,0 +1,7 @@
+scenario,input,expected,observed_fire_minutes,observed_types,pass
+Low,UVI 1.0 for 60 min,no reminders,[],[],True
+Moderate,UVI 4.0 for 20 min,"fire at 0 and 10 min (cooldown suppresses 5, 15)","[0, 10]","['current', 'current']",True
+High,UVI 7.0 for 20 min,fire at 0 and 10 min,"[0, 10]","['current', 'current']",True
+Prolonged,UVI 4.0 for 45 min,'sustained' type only once 30 min of exposure is reached (first at 30 min),"[0, 10, 20, 30, 40]","['current', 'current', 'current', 'sustained', 'sustained']",True
+Transition,"Low, forecast rises at 10 min, UVI 4.5 at 15-20 min, then shade",early 'predicted' reminder at 10 min; cooldown at 15; fire at 20; none in shade,"[10, 20]","['predicted', 'current']",True
+Missing data,UVI 4.0 with a 10-min gap (2 missing intervals),no reminder during gap; status 'data unavailable'; sustained counter resets,"[0, 20, 30]","['current', 'current', 'current']",True

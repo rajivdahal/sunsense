@@ -1,0 +1,6 @@
+session_id,timestamp,mean_uv_index,max_uv_index,mean_uva,mean_uvb,exposure_duration_sec,cumulative_exposure,time_of_day,risk_label
+S001,2026-07-15T09:00:00,1.2,1.5,12.4,4.1,60,0.02,9.0,Low
+S001,2026-07-15T09:01:00,2.1,2.6,20.8,7.2,120,0.055,9.02,Low
+S001,2026-07-15T12:00:00,4.2,5.0,42.1,15.7,600,0.45,12.0,Moderate
+S002,2026-07-16T13:15:00,6.5,7.2,65.3,24.8,900,1.125,13.25,High
+S002,2026-07-16T13:16:00,3.5,4.1,35.0,12.5,960,1.18,13.27,High

@@ -1,0 +1,27 @@
+{
+  "WARNING": "Synthetic replay - software test only",
+  "replay_intervals": 96,
+  "intervals_uvi_ge3": 30,
+  "reminders_fired": 17,
+  "by_type": {
+    "sustained": 12,
+    "current": 3,
+    "predicted": 2
+  },
+  "suppressed_by_cooldown": 16,
+  "first_reminder": "2026-11-10 12:10:00",
+  "last_reminder": "2026-11-10 14:50:00",
+  "reminders_while_uvi_below_3": 2,
+  "processing_latency_ms": {
+    "median": 1.91,
+    "p95": 3.17,
+    "max": 3.24
+  },
+  "latency_note": "software processing time per replay step on this computer; not BLE delivery or on-device display latency",
+  "scenario_tests_passed": "6/6",
+  "rf_params": {
+    "n_estimators": 100,
+    "max_depth": 3,
+    "min_samples_leaf": 10
+  }
+}

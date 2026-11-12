@@ -1,0 +1,8 @@
+model,val_macro_f1,test_accuracy,test_macro_f1,test_macro_f1_present,delta_macro_f1_vs_persistence
+A_persistence,0.744,1.0,0.333,1.0,0.0
+B_intensity_RF,0.502,1.0,0.333,1.0,0.0
+C_+history_RF,0.405,1.0,0.333,1.0,0.0
+D_+variability_duration_RF,0.405,1.0,0.333,1.0,0.0
+E_+dose_time_RF,0.356,1.0,0.333,1.0,0.0
+E_full_logreg,0.405,1.0,0.333,1.0,0.0
+E_full_xgb,0.095,0.0,0.0,0.0,-0.333
